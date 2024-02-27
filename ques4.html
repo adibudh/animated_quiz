@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style4.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                
+                <h1 class = "header_text">Do you promise to give kissies(also forehead kissies)?</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://64.media.tumblr.com/873f79dde46c4c35b2283c08eb590e4a/57028bd934784d7e-f7/s540x810/fd7114fe3a003dc7739f2bb977b0204a9d957711.gif">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "ques5.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
